@@ -5,20 +5,20 @@
 class Koda < Formula
   desc "Kong Plugin Development Workbench"
   homepage "https://github.com/raoxiaoyan/koda"
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/raoxiaoyan/koda/releases/download/v0.1.0/koda_darwin_amd64.tar.gz"
-      sha256 "1060c3fd81f111bf64c24deabc5990f19a1b76b115cb5f3f1680c03e09f9f4e9"
+      url "https://github.com/raoxiaoyan/koda/releases/download/v0.1.1/koda_darwin_amd64.tar.gz"
+      sha256 "fd7cb3de3eff8141bdb86da1f17b786c2e75bd5db3ddba3b579d9020a1af1ee7"
 
       define_method(:install) do
         bin.install "koda"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/raoxiaoyan/koda/releases/download/v0.1.0/koda_darwin_arm64.tar.gz"
-      sha256 "e17d2d07ecee118669a5167c81ae5c83d31be23fe74b2742777a38588d461cea"
+      url "https://github.com/raoxiaoyan/koda/releases/download/v0.1.1/koda_darwin_arm64.tar.gz"
+      sha256 "f1952f4a7ec51981aba109aa7aee1a906ced15a465d45da58424fcbc0f75014f"
 
       define_method(:install) do
         bin.install "koda"
@@ -28,15 +28,15 @@ class Koda < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/raoxiaoyan/koda/releases/download/v0.1.0/koda_linux_amd64.tar.gz"
-      sha256 "c80925e5a91880435d0c8d745ce3048d776c470fd1ded0784c65570ee361956b"
+      url "https://github.com/raoxiaoyan/koda/releases/download/v0.1.1/koda_linux_amd64.tar.gz"
+      sha256 "b69dee983b6bcb52f3f0dcd98ff5a4324a78380467c6f92b18b7e4ca844a8863"
       define_method(:install) do
         bin.install "koda"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/raoxiaoyan/koda/releases/download/v0.1.0/koda_linux_arm64.tar.gz"
-      sha256 "e6552a2fbbf73709e2af6f573164149732a3a1a852593a6abbff553c27a95976"
+      url "https://github.com/raoxiaoyan/koda/releases/download/v0.1.1/koda_linux_arm64.tar.gz"
+      sha256 "d9f6ba5b8e326bdd1ad6a155d22a723613ad83c35281967ddfaedc69090472e5"
       define_method(:install) do
         bin.install "koda"
       end
